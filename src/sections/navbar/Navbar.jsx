@@ -1,6 +1,7 @@
 import React from 'react'
 import './navbar.css'
-import profile2 from '../../assets/profile2.jpeg'
+import home from '../../assets/home48.png'
+
 
 const data = [
     { id: 1, link: '#', title: 'Home' },
@@ -15,7 +16,7 @@ const Navbar = () => {
         <nav>
             <div className="container nav-container">
                 <a href="index.html" className='nav-logo'>
-                    <img src={profile2} alt="profile pic" />
+                    <img src={home} alt="home" />
                 </a>
                 <ul className='nav-menu'>
                     {
