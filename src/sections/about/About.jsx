@@ -3,10 +3,18 @@ import './about.css';
 import profile2 from '../../assets/profile2.jpeg'
 import CV from '../../assets/CV.pdf';
 import { LuDownload } from "react-icons/lu";
-import data from './data'
-import Card from '../../components/Card'
+import Card from '../../components/Card';
 import './about.css';
+import { GrProjects } from "react-icons/gr";
+import { FaAward } from "react-icons/fa";
+import { BiHappyHeartEyes } from "react-icons/bi";
 
+
+const data = [
+    { id: 1, icon: <GrProjects />, title: 'Projects', desc: 'personal and collabs' },
+    { id: 2, icon: <FaAward />, title: 'Experience', desc: '10+ Years Investigations, 1+ Coding' },
+    // { id: 3, icon: <BiHappyHeartEyes />, title: 'Clients', desc: '70+ happy clients' }
+]
 
 const About = () => {
     return (
@@ -19,7 +27,17 @@ const About = () => {
                 </div>
                 <div className="about-right">
                     <h2>About Me</h2>
-                    <div className="about-cards"></div>
+                    <div className="about-cards">
+                        {
+                            data.map(item => (
+                                <Card key={item.id} className="about-card">
+                                    <span className='about-card-icon'>{item.icon}</span>
+                                    <h5>{item.title}</h5>
+                                    <small>{item.desc}</small>
+                                </Card>
+                            ))
+                        }
+                    </div>
                     <p>
                         For years, I excelled in the world of investigations, tackling cases like criminal tax-fraud, insurance fraud, and complex energy complaints. But the world changed during the Covid Pandemic, and so did my perspective of my own future. I realised I needed to be more decisive about how my life would look and actively choose my career, instead of stumbling into one that chose me.</p>
 
