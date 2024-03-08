@@ -1,7 +1,7 @@
 import React from 'react'
+import { BiSolidHomeHeart } from "react-icons/bi";
+import { IoColorWandOutline } from "react-icons/io5";
 import './navbar.css'
-import home from '../../assets/home48.png'
-
 
 const data = [
     { id: 1, link: '#', title: 'Home' },
@@ -16,14 +16,14 @@ const Navbar = () => {
         <nav>
             <div className="container nav-container">
                 <a href="index.html" className='nav-logo'>
-                    <img src={home} alt="home" />
+                    <BiSolidHomeHeart size={24} color="white" alt="Home icon" />
                 </a>
                 <ul className='nav-menu'>
                     {
                         data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
                     }
                 </ul>
-
+                <button id="theme-icon"><IoColorWandOutline /></button>
             </div>
         </nav>
     )
