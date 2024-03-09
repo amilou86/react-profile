@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 const data = [
     { id: 1, link: 'https://www.instagram.com/unapologeticallyami/', icon: <FaInstagram /> },
-    { id: 2, link: 'hhttps://twitter.com/AmiEdwardsDev', icon: <FaXTwitter /> },
+    { id: 2, link: 'https://twitter.com/AmiEdwardsDev', icon: <FaXTwitter /> },
     { id: 3, link: 'https://github.com/amilou86', icon: <FaGithub /> }
 ]
 
