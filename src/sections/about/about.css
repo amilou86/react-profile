@@ -59,15 +59,15 @@
 
 /* MEDIA QUERIES (tablets) */
 @media screen and (max-width: 1024px) {
-    .about__left {
+    .about-left {
         display: none;
     }
 
-    .about__container {
+    .about-container {
         grid-template-columns: 1fr;
     }
 
-    .about__right h2 {
+    .about-right h2 {
         text-align: center;
     }
 }
@@ -75,12 +75,12 @@
 
 /* MEDIA QUERIES (phones) */
 @media screen and (max-width: 600px) {
-    .about__cards {
+    .about-cards {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
 
-    .about__right .btn {
+    .about-right .btn {
         margin-top: 2rem;
     }
 

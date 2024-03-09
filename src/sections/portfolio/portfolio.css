@@ -1,0 +1,113 @@
+.portfolio-categories {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+*/ .btn.cat-btn {
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+.btn.cat-btn:hover {
+    transform: translateY(0);
+}
+
+
+.portfolio-project {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: start;
+}
+
+.card.portfolio-project {
+    width: var(--container-width-lg);
+    margin-inline: auto;
+    max-width: 1920px;
+    animation: animateProject 800ms ease-in forwards;
+}
+
+@keyframes animateProject {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.portfolio-project-image {
+    width: 100%;
+    height: fit-content;
+    min-height: 7rem;
+    max-height: 15rem;
+    background: var(--color-light);
+    border-radius: var(--border-radius-2);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+
+.portfolio-project-image::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* Adjust based on image aspect ratio */
+    background-image: url("path/to/your/image.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-project p {
+    margin: 0.5rem 0 2rem;
+}
+
+.portfolio-project-cta {
+    display: flex;
+    gap: 1rem;
+    background: var(--color-white);
+    padding: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-1);
+    transition: var(--transition);
+}
+
+.portfolio-project:hover .btn.sm {
+    border-color: var(--color-white);
+}
+
+.portfolio-project:hover .btn.sm.primary {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    .portfolio-project {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    .portfolio-categories {
+        gap: 0.6rem;
+    }
+
+    .btn.cat-btn {
+        padding: 0.7rem 0.8rem;
+    }
+
+    .portfolio-project {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
