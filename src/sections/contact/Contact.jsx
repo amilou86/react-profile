@@ -9,10 +9,6 @@ const data = [
     { id: 3, icon: <FaWhatsapp />, link: 'https://wa.me/+447703785849' }
 ]
 
-// alternative whatsApp link
-// https://wa.me/yournumber
-// https://api.whatsapp.com/send/?phone=%2B233557097546
-
 const Contact = () => {
     return (
         <section id="contact">

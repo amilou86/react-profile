@@ -1,7 +1,11 @@
 import React from 'react'
 import { BiSolidHomeHeart } from "react-icons/bi";
 import { IoColorWandOutline } from "react-icons/io5";
+import { useModalContext } from '../../context/modal-context.jsx'
+import { ModalProvider } from '../../context/modal-context.jsx';
+import Modal from '../../components/Modal.jsx'
 import './navbar.css'
+
 
 const data = [
     { id: 1, link: '#', title: 'Home' },
@@ -11,7 +15,8 @@ const data = [
 ]
 
 const Navbar = () => {
-
+    const { showModal, showModalHandler } = useModalContext();
+    console.log("using modal context, showModal:", showModal);
     return (
         <nav>
             <div className="container nav-container">
@@ -23,9 +28,10 @@ const Navbar = () => {
                         data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
                     }
                 </ul>
-                <button id="theme-icon"><IoColorWandOutline /></button>
+                {showModal && <Modal />} {/* Render Modal when showModal is true */}
+                <button id="theme-icon" onClick={() => showModalHandler()}><IoColorWandOutline /></button>
             </div>
-        </nav>
+        </nav >
     )
 }
 

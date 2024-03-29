@@ -1,19 +1,18 @@
 import React from 'react'
 import './about.css';
 import profile2 from '../../assets/profile2.jpeg'
-import CV from '../../assets/CV.pdf';
+import cv from '../../assets/cv.pdf';
 import { LuDownload } from "react-icons/lu";
 import Card from '../../components/Card';
 import './about.css';
 import { GrProjects } from "react-icons/gr";
 import { FaAward } from "react-icons/fa";
-import { BiHappyHeartEyes } from "react-icons/bi";
+
 
 
 const data = [
     { id: 1, icon: <GrProjects />, title: 'Projects', desc: 'personal and collabs' },
     { id: 2, icon: <FaAward />, title: 'Experience', desc: '10+ Years Investigations, 1+ Coding' },
-    // { id: 3, icon: <BiHappyHeartEyes />, title: 'Clients', desc: '70+ happy clients' }
 ]
 
 const About = () => {
@@ -38,17 +37,29 @@ const About = () => {
                             ))
                         }
                     </div>
-                    <p>
-                        For years, I excelled in the world of investigations, tackling cases like criminal tax-fraud, insurance fraud, and complex energy complaints. But the world changed during the Covid Pandemic, and so did my perspective of my own future. I realised I needed to be more decisive about how my life would look and actively choose my career, instead of stumbling into one that chose me.</p>
+                    <p> Motivated by the impactful changes of the Covid pandemic, I began a
+                        journey of self-development.</p>
+                    <p>Whilst working full-time and becoming a new
+                        parent, and at great personal sacrifice, I have completed professional training in
+                        multiple industries.</p>
+                    <p> After experiencing a variety of roles, I am now determined
+                        in my goal of joining the exciting and dynamic tech sector. I am a creative and
+                        pragmatic thinker, who enjoys problem solving, traits that I believe make me
+                        naturally well suited to software development.</p>
+                    <p> I am extremely proud of the
+                        time and hard work I dedicated to completing an intense Front-End Web
+                        Development Bootcamp. With my newfound skills in JavaScript and React, I
+                        worked both independently and collaboratively to build numerous web-apps
+                        and projects.</p>
+                    <p> I am inspired by women who have fought hard to create space
+                        for future female developers in the traditionally male-dominated STEM sector.
+                        I hope continue their legacy and be an example to the women and girls
+                        around me.</p>
 
-                    <p>The exciting and fast-growing tech sector allows me to embrace my love of creativity and problem-solving. As a full-time working mum, the traditional path of university wasn't an option. So, filled with determination, I decided an intensive front-end web development bootcamp was the best path to achieve my goals, despite the personal sacrifices needed.</p>
-
-                    <p> The journey has been tough, filled with times of self-doubt, but has also been incredibly rewarding. I have delved into the fundamentals of HTML, CSS, JavaScript, React, TDD, BDD, and Node.js. Collaborating with fellow students, we tackled multiple group app projects to prepare for the real-world life of a web developer.
-                    </p>
-                    <a href={CV} download className='btn primary'>Download CV <LuDownload /></a>
+                    <a href={cv} download className='btn primary'>Download CV <LuDownload /></a>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

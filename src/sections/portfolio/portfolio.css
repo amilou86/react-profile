@@ -42,7 +42,6 @@
 
 .portfolio-project-image {
     width: 100%;
-    height: fit-content;
     min-height: 7rem;
     max-height: 15rem;
     background: var(--color-light);
@@ -51,16 +50,10 @@
     overflow: hidden;
 }
 
-
-.portfolio-project-image::before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-    /* Adjust based on image aspect ratio */
-    background-image: url("path/to/your/image.png");
-    background-size: cover;
-    background-position: center;
+.portfolio-project-image img {
+    width: 100%;
 }
+
 
 .portfolio-project p {
     margin: 0.5rem 0 2rem;

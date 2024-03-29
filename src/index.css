@@ -38,10 +38,9 @@ html {
 }
 
 body {
-    font-family: "Economica", sans-serif;
-
+    /* font-family: "Economica", sans-serif; */
     /* Poiret font family */
-    /* font-family: "Poiret One", sans-serif; */
+    font-family: "Poiret One", sans-serif;
     line-height: 1.6;
     font-size: 0.9rem;
 }
@@ -170,7 +169,6 @@ h6 {
 
 .btn.primary {
     background: var(--color-primary);
-    /* text color always white that's why i didn't use a variable color */
     color: white;
 }
 

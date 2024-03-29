@@ -10,7 +10,6 @@ const links = [
     { id: 4, link: '#contact', title: 'Contact' }
 ]
 
-
 const socials = [
     { id: 1, link: 'https://www.instagram.com/unapologeticallyami/', icon: <AiOutlineInstagram /> },
     { id: 2, link: 'https://twitter.com/AmiEdwardsDev', icon: <FaXTwitter /> },
