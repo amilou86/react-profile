@@ -10,7 +10,7 @@ const Project = ({ project }) => {
       <h4>{project.title}</h4>
       <p>{project.desc}</p>
       <div className="portfolio-project-cta">
-        <a href={project.demo} className="btn sm" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a href={project.deployment} className="btn sm" target="_blank" rel="noopener noreferrer">Deployment</a>
         <a href={project.github} className="btn sm primary" target="_blank" rel="noopener noreferrer">Github</a>
       </div>
     </Card>
