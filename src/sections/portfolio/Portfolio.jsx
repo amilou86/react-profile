@@ -43,7 +43,7 @@ const data = [
         id: 4,
         category: 'JavaScript',
         image: WDSscreenshot,
-        title: "Work-day scheduler",
+        title: "Work-Day Scheduler",
         desc: "A simple calendar application that allows the user to save events for each hour of the day",
         deployment: 'https://amilou86.github.io/Work-Day-Scheduler/',
         github: 'https://github.com/amilou86/Work-Day-Scheduler.git'
