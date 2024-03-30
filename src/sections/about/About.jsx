@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css';
 import profile2 from '../../assets/profile2.jpeg'
-import cv from '../../assets/cv.pdf';
+import cv from '../../assets/CV.pdf';
 import { LuDownload } from "react-icons/lu";
 import Card from '../../components/Card';
 import './about.css';
