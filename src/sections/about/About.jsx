@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css';
 import profile2 from '../../assets/profile2.jpeg'
-import cv from '../../assets/CV.pdf';
+import AEdwardsCV from '../../assets/AEdwardsCV.pdf'
 import { LuDownload } from "react-icons/lu";
 import Card from '../../components/Card';
 import './about.css';
@@ -37,26 +37,31 @@ const About = () => {
                             ))
                         }
                     </div>
-                    <p> Motivated by the impactful changes of the Covid pandemic, I began a
-                        journey of self-development.</p>
-                    <p>Whilst working full-time and becoming a new
-                        parent, and at great personal sacrifice, I have completed professional training in
-                        multiple industries.</p>
-                    <p> After experiencing a variety of roles, I am now determined
-                        in my goal of joining the exciting and dynamic tech sector. I am a creative and
-                        pragmatic thinker, who enjoys problem solving, traits that I believe make me
-                        naturally well suited to software development.</p>
-                    <p> I am extremely proud of the
-                        time and hard work I dedicated to completing an intense Front-End Web
-                        Development Bootcamp. With my newfound skills in JavaScript and React, I
-                        worked both independently and collaboratively to build numerous web-apps
-                        and projects.</p>
-                    <p> I am inspired by women who have fought hard to create space
-                        for future female developers in the traditionally male-dominated STEM sector.
-                        I hope continue their legacy and be an example to the women and girls
-                        around me.</p>
+                    <p> As an accomplished professional, transitioning from a successful career in
+                        investigations to web development, I bring a unique blend of analytical,
+                        problem-solving, and communication skills to the tech sector. My investigative
+                        experience, focused on various types of fraud and complex complaints, has
+                        equipped me with meticulous attention to detail and a methodical approach to
+                        problem-solving, which are directly applicable to debugging code and
+                        developing efficient applications.</p>
+                    <p>Having recently completed an intensive front-end web development bootcamp
+                        with a score of 97%, I have gained hands-on experience with JavaScript, React,
+                        TDD, OOP, Node.js, and Agile methodologies. My ability to manage individual
+                        assignments and collaborate on group projects showcases my versatility in
+                        working both independently and as part of a team. I am committed to further
+                        developing my coding skills, currently learning Python and SQL, and am eager
+                        to contribute to innovative projects.</p>
+                    <p>Balancing full-time work with coding studies and personal responsibilities has
+                        honed my time management and prioritisation abilities, ensuring I consistently
+                        meet deadlines and deliver high-quality work. My dedication to continuous
+                        learning and my passion for creative problem-solving drive my pursuit of a
+                        successful career in web development.</p>
+                    <p>I am a strong advocate for equality, inclusion, and diversity, believing that
+                        diverse teams drive innovation. With my background and technical expertise, I
+                        am excited to bring my skills to the tech sector and contribute to dynamic and
+                        inclusive projects.</p>
 
-                    <a href={cv} download className='btn primary'>Download CV <LuDownload /></a>
+                    <a href={AEdwardsCV} download className='btn primary'>Download CV <LuDownload /></a>
                 </div>
             </div>
         </section >

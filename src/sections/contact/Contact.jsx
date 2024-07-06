@@ -9,6 +9,7 @@ const data = [
     { id: 3, icon: <FaWhatsapp />, link: 'https://wa.me/+447703785849' }
 ]
 
+
 const Contact = () => {
     return (
         <section id="contact">
